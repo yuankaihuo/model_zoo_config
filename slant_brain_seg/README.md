@@ -21,7 +21,7 @@ pip3 install mlcommons-box-docker
 This directory is the root of "the box".
 
 ```sh
-git clone https://github.com/xyhuang/box_examples.git
+clone the example
 cd box_examples/slant_brain_seg
 ```
 
