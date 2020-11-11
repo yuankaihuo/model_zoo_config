@@ -11,12 +11,16 @@ analytic:
   description: "Whole brain segmentation"
   Assumptions: "an entire study is dropped on /in"
 inputs:
-- name: 'input_dir'
-  type: 'directory'
+- name: "input_dir"
+  type: "directory"
   format: "nifti"
 outputs:
-- name: 'output_dir'
-  type: 'directory'
+- name: "output_dir"
+  type: "directory"
+  format: "nifti"
+
+- name: "config_dir"
+  type: "directory"
   format: "nifti"
 run:
   tasks: ("download.yaml", "pre_process.yaml", "run_test.yaml", "post_process.yaml", "gen_results.yaml")
