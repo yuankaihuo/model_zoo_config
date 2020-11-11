@@ -4,8 +4,8 @@ schema_version: 1.0.0
 task_name: download
 
 input_binding:
-  input_dir: $WORKSPACE/inputs
+  input_dir: $WORKSPACE/input_dir
 
 output_binding:
-  output_dir: $WORKSPACE/outputs
-  log_dir: $WORKSPACE/logs
+  output_dir: $WORKSPACE/output_dir
+  log_dir: $WORKSPACE/config_dir
