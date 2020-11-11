@@ -1,0 +1,34 @@
+model_name: 'slant'
+model_version: 0.1.0
+
+# REQUIRED
+analytic:
+  name: 'slant'
+  release_date: '28 November 2018'
+  version: 'v1.1.0'
+  vendor: 'Vanderbilt'
+  author: 'Yuankai Huo'
+  description: 'Whole brain segmentation'
+  Assumptions: 'an entire study is dropped on /in' ''
+input:
+  format: 'dicom'
+output:
+  format: 'nifti'
+
+# OPTIONAL
+input_format:
+  modality: 'MR'
+  SOP:
+  MR_options:
+    coil: 'body'
+    pulse: 'SSFSE'
+    slice_thick: '4'
+    spacing: '3'
+    weighting: 'T2'
+    contrast: 'none'
+    orientation: 'COR'
+    Bo: '1.5'
+    TE: '190'
+    TR: 'min'
+    matrix: '256x256'
+    pixel: '1.5'
