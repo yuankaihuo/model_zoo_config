@@ -1,15 +1,14 @@
 model_name: "slant"
 model_version: 0.1.0
 
-# REQUIRED
-analytic:
-  name: "slant"
-  release_date: "28 November 2018"
-  version: "v1.1.0"
-  vendor: "Vanderbilt"
-  author: "Yuankai Huo"
-  description: "Whole brain segmentation"
-  Assumptions: "an entire study is dropped on /in"
+# REQUIRED for developer
+hardware:
+  ntasks: 1
+  time: "1:00:00"
+  nodes: 1
+  mem: "16000mb"
+  gpu: 1
+  gpumem: "12000mb"
 inputs:
 - name: "input_dir"
   type: "directory"
@@ -18,23 +17,21 @@ outputs:
 - name: "output_dir"
   type: "directory"
   format: "nifti"
-- name: "config_dir"
-  type: "directory"
-  format: "nifti"
-# resources
-backend:
-  server: "Amazon"
-hardware:
-  ntasks: 1
-  time: "1:00:00"
-  nodes: 1
-  mem: "16000mb"
-  gpu: 1
-  gpumem: "12000mb"
-
 run:
   tasks: ("download.yaml", "pre_process.yaml", "run_test.yaml", "post_process.yaml", "gen_results.yaml")
+analytic:
+  name: "slant"
+  release_date: "28 November 2018"
+  version: "v1.1.0"
+  vendor: "Vanderbilt"
+  author: "Yuankai Huo"
+  description: "Whole brain segmentation"
+  Assumptions: "an entire study is dropped on /in"
 
+
+# OPTIONAL backend
+backend:
+  server: "Amazon"
 
 # OPTIONAL
 input_format:
