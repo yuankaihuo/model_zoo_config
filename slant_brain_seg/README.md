@@ -22,7 +22,7 @@ This directory is the root of "the box".
 
 ```sh
 clone the example
-cd box_examples/slant_brain_seg
+cd model_zoo_config/slant_brain_seg
 ```
 
 ### Run the Tasks
