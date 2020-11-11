@@ -18,10 +18,20 @@ outputs:
 - name: "output_dir"
   type: "directory"
   format: "nifti"
-
 - name: "config_dir"
   type: "directory"
   format: "nifti"
+# resources
+backend:
+  server: "Amazon"
+hardware:
+  ntasks: 1
+  time: "1:00:00"
+  nodes: 1
+  mem: "16000mb"
+  gpu: 1
+  gpumem: "12000mb"
+
 run:
   tasks: ("download.yaml", "pre_process.yaml", "run_test.yaml", "post_process.yaml", "gen_results.yaml")
 

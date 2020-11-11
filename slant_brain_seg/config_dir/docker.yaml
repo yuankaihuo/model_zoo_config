@@ -1,0 +1,9 @@
+schema_type: mlcommons_box_platform
+schema_version: 0.1.0
+
+platform:
+  name: "docker"
+  version: ">=18.01"
+container:
+  runtime: "nvidia"
+  image: "xyhuang/deep_brain_seg_v1_1_0:0.1.0"
