@@ -1,4 +1,4 @@
-schema_type: mlcommons_box_platform
+docker: mlcommons_box_platform
 schema_version: 0.1.0
 
 platform:
