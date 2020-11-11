@@ -1,0 +1,11 @@
+schema_type: mlbox_invoke
+schema_version: 1.0.0
+
+task_name: gen_results
+
+input_binding:
+  input_dir: $WORKSPACE/inputs
+
+output_binding:
+  output_dir: $WORKSPACE/outputs
+  log_dir: $WORKSPACE/logs

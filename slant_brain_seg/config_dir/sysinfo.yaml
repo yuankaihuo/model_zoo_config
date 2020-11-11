@@ -1,14 +1,16 @@
-model_name: 'slant'
+model_name: "slant"
 model_version: 0.1.0
 
 # REQUIRED
+backend:
+  server: "Amazon"
 hardware:
   ntasks: 1
-  time: '1:00:00'
+  time: "1:00:00"
   nodes: 1
-  mem: '16000mb'
+  mem: "16000mb"
   gpu: 1
-  gpumem: '12000mb'
+  gpumem: "12000mb"
 platform:
   name: "docker"
   version: ">=18.01"
