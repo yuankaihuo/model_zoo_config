@@ -1,4 +1,7 @@
 # SLANT Brain Segmentation - MLCommons-Box
+This repository is forked from https://github.com/xyhuang/box_examples
+
+The source code was writen by Xinyuan Huang and ML-Box community
 
 MLCommons-Box derived from [SLANT: Deep Whole Brain High Resolution Segmentation](https://github.com/MASILab/SLANTbrainSeg).
 
